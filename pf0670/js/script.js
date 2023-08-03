@@ -87,6 +87,15 @@ nomes.sort();
 //Revertendo a ordem do array usando reverse
 nomes.reverse();
 
+//alterando o valor de um elemento do array usando splice
+nomes.splice(1, 1, "Maria"); // da posição 1 até a posição 1, vai trocar o nome que esta na posição 1 por MARIA
+
+//alterando o valor de dois elementos do array usando splice
+nomes.splice(1, 2, "Maria", "Jeff");
+
+//removendo o valor de dois elementos do array usando splice
+nomes.splice(1, 1);
+
 
 
 
