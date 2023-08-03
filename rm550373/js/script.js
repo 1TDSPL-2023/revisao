@@ -35,3 +35,93 @@
 //     }
 //     console.log(nome);
 // })
+
+
+//Declaracao de um array de objetos alunos.
+// let alunos = [
+// // imprimindo array usando loop for
+//     {nome : "Diego" , idade : 23 , peso : 80.5},
+//     {nome : "Gabriel" , idade : 15 , peso : 60.5},
+//     {nome : "Lucas" , idade : 30 , peso : 90.5}
+// ]
+
+// //imprimir array objetos
+
+// console.log(alunos);
+
+// //JSON = JAVASCRIPT OBJECT NOTATION
+
+// //Iprimindo o primeiro objeto do array
+
+// console.log(alunos[0]);
+
+// //imprimindo o nome do primeiro objeto do array
+
+// console.log(alunos[0].nome);
+
+// //imprimindo o nome , idade e peso de todos objetos do array
+// console.log(alunos[0].nome, alunos[0].idade , alunos[0].peso);
+// console.log(alunos[1].nome, alunos[1].idade , alunos[1].peso);
+// console.log(alunos[2].nome, alunos[2].idade , alunos[2].peso);
+
+// console.log("\n");
+
+// //imprimindo o nome com o alor da propriedade em String
+
+// let propriedade = "nome";
+
+// console.log(alunos[0][propriedade], alunos[0].idade , alunos[0].peso);
+// console.log(alunos[1][propriedade], alunos[1].idade , alunos[1].peso);
+// console.log(alunos[2][propriedade], alunos[2].idade , alunos[2].peso);
+
+
+// //imprimindo cada informacao do objeto com loop for
+
+// for (let i = 0 ;  i < alunos.length ; i++){
+//     console.log(alunos[i].nome, alunos[i].idade , alunos[i].peso);
+// }
+
+
+//Declarando um array de nomes de pessoas
+let nomes = ["Diego" , "Gabriel" , "Lucas"]
+//imprimindo array
+console.log(nomes);
+console.log("\n");
+
+//Inserindo um novo nome no final do array utilizando o método push
+nomes.push("João");
+// imprimindo Array
+console.log(nomes);
+console.log("\n");
+
+//Inserindo um novo nome no final do array utilizando o método push
+nomes.push("Maria");
+// imprimindo Array
+console.log(nomes);
+console.log("\n");
+
+//Inserindo um novo nome no inicio do array utilizando o método unshift, pegando o alor da variavel noem que recebeu o vvalor do input.
+
+
+//recuperando o botao submit do form
+let botao = document.querySelector('#btnSubmit');
+
+
+
+//adicionando um evento click ao botao de submit, utilizando um arrow function
+botao.addEventListener("click", ()=>{
+    //recuperando o valor do input de email e armazenado na variavel email
+    let email = document.querySelector("#idEmail").value;
+    //recuperando o valor do input de txtTel e armazenando na variavel telefone 
+    let telefone = document.querySelector("#txtTel").value;
+
+
+
+    //adicionando a variavel email no inicio do array nomes.
+    nomes.unshift(email);
+})
+    //limpar o input de email
+    document.querySelector("#idEmail").value = "";
+    //limpar o input de telefone
+    document.querySelector("#idTel").value = "";
+    
