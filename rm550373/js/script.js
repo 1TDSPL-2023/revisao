@@ -140,7 +140,8 @@ botao.addEventListener("click", ()=>{
     console.log("\n");
 
     //alterando o valor de um elemento utilizando splice
-    nomes.splice(1,1);
+    nomes.splice(1,2);
     //quando nao especificado nada apos dizer aposicao ele substiuira por nada entao apga
     console.log(nomes);
     console.log("\n");
+    
