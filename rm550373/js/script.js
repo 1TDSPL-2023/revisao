@@ -125,3 +125,22 @@ botao.addEventListener("click", ()=>{
     //limpar o input de telefone
     document.querySelector("#idTel").value = "";
     
+
+
+    //alterando o valor de um elemto do array com o metodo splice
+    //Desde a posicao 1 ate a posicao 1 substitui por "maria"
+    nomes.splice(1,1,"maria");
+    console.log(nomes);
+    console.log("\n");
+
+    //alteracao de 2 valores do array
+    nomes.splice(1, 2 , "Tuca", "Jorge");
+    //imprimindo o array
+    console.log(nomes);
+    console.log("\n");
+
+    //alterando o valor de um elemento utilizando splice
+    nomes.splice(1,1);
+    //quando nao especificado nada apos dizer aposicao ele substiuira por nada entao apga
+    console.log(nomes);
+    console.log("\n");
