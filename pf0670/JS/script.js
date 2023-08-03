@@ -190,3 +190,21 @@ botaoOrdenar.addEventListener("click", () => {
     //Imprimindo o array na div com id="lista" um embaixo do outro
     document.querySelector("#lista").innerHTML = nomes.join("<br>");
 });
+
+//Alterando o valor de um elemento array utiizadno o método aplice
+nomes.splice(1, 1, "Maria");
+//Imprimindo o array
+console.log(nomes);
+console.log("\n");
+
+//Alterando o valor de dois elementos do aray utilizando o método splice
+nomes.splice(1, 2, "Tuca", "Jorge");
+//Imprimindo o array
+console.log(nomes);
+console.log("\n");
+
+//Alterando o valor de um elemento do array utilizando o método splice
+nomes.splice(1, 1);
+//Imprimindo o array
+console.log(nomes);
+console.log("\n");
