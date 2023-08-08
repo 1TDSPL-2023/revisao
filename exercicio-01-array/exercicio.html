@@ -10,15 +10,35 @@
 </head>
 
 <body>
-    <h1>Identificação do aluno</h1>
+    <!-- <h1>Identificação do aluno</h1>
     <form method="get">
         <fieldset>
             <label for="adicionarTarefa">Tarefa a ser adicionada: </label>
-            <input type="text" id="adicionarTarefa"><br>
-            <br><button type="button" onclick="adicionar()">Adicionar tarefa</button>
+            <input type="text" name="tarefa" id="adicionarTarefa"><br>
+            <br><button type="button" id="btnAddTarefa" onclick="adicionar()">Adicionar tarefa</button>
         </fieldset>
     </form>   
     <h2>Tarefas:</h2>
-    <ul id="listaTarefas"></ul>
+    <ul id="listaTarefas"></ul> -->
+
+    <h1>Identificação do aluno</h1>
+    <form method="get">
+        <fieldset>
+            <div>
+                <label for="idTarefa">Nova Tarefa: </label>
+                <input type="text" name="tarefa" id="idTarefa">
+            </div>
+            <div>
+                <button type="submit" id="btnAddTarefa">Adicionar</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <h2>Tarefas: </h2>
+    <div>
+        <ul id="lista-tarefa">
+
+        </ul>
+    </div>
 </body>
 </html>
