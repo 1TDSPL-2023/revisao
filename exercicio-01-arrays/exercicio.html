@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluno</title>
+
+    <script src="exercicio.js" defer></script>
 </head>
 
 <body>
@@ -13,8 +15,10 @@
         <fieldset>
             <label for="adicionarTarefa">Tarefa a ser adicionada: </label>
             <input type="text" id="adicionarTarefa"><br>
-            <br><button>Adicionar tarefa</button>
+            <br><button type="button" onclick="adicionar()">Adicionar tarefa</button>
         </fieldset>
     </form>   
+    <h2>Tarefas:</h2>
+    <ul id="listaTarefas"></ul>
 </body>
 </html>
