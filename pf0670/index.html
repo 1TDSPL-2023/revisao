@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulação de Arrays</title>
-
-    <script src="./js/script.js" defer></script>
-</head>
+  
+  </head>
 <body>
-    <a href="../exercicio-01-arrays/exercicio.html">Exercicio-01-arrays</a>
-
+   
     <h1>Manipulando Arrays</h1>
-
     <h2>Exercício 1</h2>
     <div>
         <p>Crie um form para receber um e-mail e um telefone</p>
@@ -21,10 +18,26 @@
         <form method="get" onsubmit="return false">
             <fieldset>
                 <legend>Dados</legend>
+
                     <label for="email">Email:</label>
                     <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu email">
                     <br>
                     <label for="telefone">Telefone:</label>
+
+                    <input type="text" name="txtTel" id="idTel" placeholder="Digite seu telefone">
+                    <br>
+                    <input type="submit" value="Enviar" id="btnSubmit">
+                    <br>
+           
+                    <div id="lista">
+
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+
                     <input type="text" name="txtTelefone" id="idTel" placeholder="Digite seu telefone">
                     <br>
                     <input type="submit" value="Enviar" id="btnSubmit">
@@ -35,5 +48,6 @@
             </fieldset>
         </form>
     </div>
+
 </body>
 </html>
