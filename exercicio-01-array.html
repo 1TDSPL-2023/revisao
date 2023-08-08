@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="./pf0670/js/tarefa.js" defer></script>
+
 </head>
 <body>
     <div>
-        <form action="#">
-            <legend>Adicione a nova Tarefa</legend>
-            <div>
-                <label for="">Nova Tarefa</label>
-                <input type="text" name="Tarefa" id="idtarefa" placeholder="Digite o nome da tarefa">
-            </div>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Adicione a nova Tarefa</legend>
+                <div>
+                    <label for="">Nova Tarefa</label>
+                    <input type="text" name="Tarefa" id="idtarefa" placeholder="Digite o nome da tarefa">
+                </div>
 
-            <div>
-                <button type="submit" id="btnAddTarefa">Adicionar</button>
-            </div>
+                <div>
+                    <button type="submit" id="btnAddTarefa">Adicionar</button>
+                </div>
+        </fieldset>
         </form>
+    </div>
+    
+    <div>
+        <ul id="lista-tarefa">
+
+        </ul>
     </div>
 </body>
 </html>
