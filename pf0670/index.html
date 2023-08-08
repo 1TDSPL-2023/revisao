@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulação de Arrays</title>
-
-    <script src="./js/script.js" defer></script>
-
-</head>
+  
+  </head>
 <body>
-        <h1>Manipulando Arrays</h1>
+   
+    <h1>Manipulando Arrays</h1>
+    <h2>Exercício 1</h2>
+    <div>
+        <p>Crie um form para receber um e-mail e um telefone</p>
+        <p>Após o envio do form, crie um array com os dados recebidos</p>
+        <p>Exiba os dados do array na tela</p>
 
-        <h2>Exercício 1</h2>
-        <div>
-            <p>Crie um form para receber um email e um telefone</p>
-            <p>Após o envio do form, crie um array com os dados recebidos</p>
-            <p>Exiba os dados do array na tela</p>
-                
-            <form method="get" onsubmit="return false">
-                <fieldset>
-                    <legend>Dados</legend>
+        <form method="get" onsubmit="return false">
+            <fieldset>
+                <legend>Dados</legend>
+
                     <label for="email">Email:</label>
                     <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu email">
                     <br>
                     <label for="telefone">Telefone:</label>
+
                     <input type="text" name="txtTel" id="idTel" placeholder="Digite seu telefone">
                     <br>
                     <input type="submit" value="Enviar" id="btnSubmit">
@@ -36,6 +36,18 @@
             </form>
 
         </div>
+
+
+                    <input type="text" name="txtTelefone" id="idTel" placeholder="Digite seu telefone">
+                    <br>
+                    <input type="submit" value="Enviar" id="btnSubmit">
+                    <br>
+                    <input type="button" value="Ordenar" id="btnOrdenar">
+                    <br>
+                    <div id="lista"></div>
+            </fieldset>
+        </form>
+    </div>
 
 </body>
 </html>
