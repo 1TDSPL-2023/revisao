@@ -9,7 +9,7 @@
     <title>Formulário</title>
     
 
-    <script src="../js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 
 </head>
 
@@ -22,14 +22,20 @@
                 
                 <fieldset>
                     <legend>Formulário</legend>
+                    
                     <div>
 
                         <label for="idTarefa">Tarefa :</label>  
                         <input placeholder="Digite sua tarefa..."  id="idTarefa" type="buttons" name="tarefa"> <br> <br>
-                        <button type="button" onclick="adicionarTarefa()">Adicionar Tarefa</button>
-                        <label for="idReset"></label> 
-                        <input type="reset" onclick="resetar()" id="idReset" value="Limpar Lista"></button>
+                        
+                    </div>
                     
+                    <div>
+                        
+                        <button type="button" id="btnAddTarefa" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+                        <label for="idReset"></label> 
+                        <input type="reset" onclick="resetar()" id="idReset" value="Limpar Lista"></button> 
+
                     </div>
                     
                 </fieldset>
@@ -38,7 +44,7 @@
 
         </div>
 
-        <ul id="listaTarefas">
+        <ul id="lista-tarefas">
         
         </ul>
 </body>
