@@ -3,14 +3,14 @@
 let listaTarefasArray = [];
 
 //Recuperando o botão addTarefa
-const botaAdicionaTarefa = document.getElementById("btnAddTarefa");
+const botaoAdicionaTarefa = document.getElementById("btnAddTarefa");
 
-//Inserindo um listener de clicck no botão addTarefa
-botaAdicionaTarefa.addEventListener("click", (evt)=>{
+//Inserindo um listener de click no botão addTarefa
+botaoAdicionaTarefa.addEventListener("click", (evento)=>{
 
-    evt.preventDefault();
+    evento.preventDefault();
 
-    //Recuperando o input da tarefa.
+    //Recuperando o input da tarefa
     const inputTarefa = document.getElementById("idTarefa");
 
     //Inserindo no array com o método push o valor digitado no input.
@@ -28,7 +28,7 @@ botaAdicionaTarefa.addEventListener("click", (evt)=>{
     //Inserindo o elemento li com o texto na lista ul:
     listaTarefasUL.appendChild(li);
 
-    //Criando o elemento botao
+    //Criando o elemento botão
     let botaoExcluir = document.createElement("button");
 
     //Inserindo o texto no elemento botão
@@ -37,16 +37,16 @@ botaAdicionaTarefa.addEventListener("click", (evt)=>{
     //Inserindo o elemento botão com o texto no elemento li:
     li.appendChild(botaoExcluir);
 
-    botaoExcluir.addEventListener("click", (evt)=>{
+    botaoExcluir.addEventListener("click", (evento)=>{
 
         listaTarefasArray.forEach(tarefa=>{
 
-            if(evt.target.parentNode.textContent.split(" ")[0] == tarefa){
+            if(evento.target.parentNode.textContent.split(" ")[0] == tarefa){
                 listaTarefasArray.splice(listaTarefasArray.indexOf(tarefa),1)
             }
         })
+        evento.target.parentNode.remove();
 
-        evt.target.parentNode.remove();
           //Imprimindo o array e limpando o input tarefa.
         console.log(listaTarefasArray);
     })
@@ -54,9 +54,3 @@ botaAdicionaTarefa.addEventListener("click", (evt)=>{
     inputTarefa.value = "";
 
 });
-
-
-// let frase = "Você, não, explicou, muito bem, professor! Mas eu, TE, AMO";
-
-// let novaFraseSplitada = frase.split(" ");
-// console.log(novaFraseSplitada);
