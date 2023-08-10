@@ -143,3 +143,18 @@ botaoOrdenar.addEventListener("click", () => {
 console.log("\nAlterando o valor de um elemento do array utilizando o método splice");
 nomes.splice(1, 1, "Maria");
 console.log(nomes);
+
+
+
+
+const cursos = [
+    { nome: "HTML5", duracao: "3 meses"},
+    { nome: "CSS3", duracao: "4 meses"},
+    { nome: "JavaScript", duracao: "6 meses"}
+];
+
+//Declarar um objeto
+const curso = {
+    nome: "PYTHON",
+    duracao: "7 meses"
+};
