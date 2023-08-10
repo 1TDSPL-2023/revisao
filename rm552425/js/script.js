@@ -158,3 +158,26 @@ const curso = {
     nome: "PYTHON",
     duracao: "7 meses"
 };
+
+let nomesCursos = cursos.map((curso) => curso.nome);
+console.log(nomesCursos);
+
+//Iterando o array com forEach
+console.log("\nIterando o array com forEach");
+let nomesCursos2 = cursos.forEach((curso) =>{ return curso.nome});
+console.log(nomesCursos2);
+
+//Declarar um array de categorias de tarefas.
+const categorias = ["Trabalho", "Estudos", "Casa", "Lazer", "Esportes"];
+
+//Recuperar o select de categorias
+const selectCategoria = document.querySelector("#idCategoria");
+
+
+categorias.forEach((categoria,index)=>{
+    let optionCategoria = document.createElement("option");
+    optionCategoria.textContent = categoria;
+    optionCategoria.value = (index+1);
+    selectCategoria.appendChild(optionCategoria);
+});
+
