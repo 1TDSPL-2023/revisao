@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    
+    <input type="text" id="description" placeholder="Descrição">
+    <input type="text" id="author" placeholder="Autor">
+    <input type="text" id="department" placeholder="Departamento">
+    <input type="number" id="importance" placeholder="Importância">
+
+    <button onclick="addTask()">Adicionar Tarefa</button>
+    <button onclick="removeCompletedTasks()">Remover Tarefas Concluídas</button>
+    
+    <table id="taskTable">
+        <tr>
+            <th>Descrição</th>
+            <th>Autor</th>
+            <th>Departamento</th>
+            <th>Importância</th>
+            <th>Valor</th>
+            <th>Duração</th>
+        </tr>
+    </table>
+
+    <button onclick="sortByImportance()">Ordenar por Importância</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
